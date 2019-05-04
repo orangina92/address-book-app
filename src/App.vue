@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-toolbar app>
-      <v-toolbar-side-icon>
+      <v-toolbar-side-icon @click = "toggleSideMenu">
       </v-toolbar-side-icon>
       <v-toolbar-title class="headline text-uppercase">
         <span>マイアドレス</span>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import SideNav from './components/SideNav'
 export default {
   name: 'App',
@@ -27,6 +28,9 @@ export default {
     return {
       //
     }
+  },
+  methods: {
+    ...mapActions(['toggleSideMenu'])
   }
 }
 </script>
