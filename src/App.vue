@@ -8,10 +8,10 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
-    <SideNav/>>
+    <SideNav/>
 
     <v-content>
-      <HelloWorld/>
+      <router-view/>
     </v-content>
   </v-app>
 </template>
